@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the program number you want to run");
-            Console.WriteLine("1:FlipCoin \n2:LeapYer");
+            Console.WriteLine("1:FlipCoin \n2:LeapYer\n3:PowerOfTwo");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -17,6 +17,10 @@ namespace BasicCorePrograms
                     break;
                 case 2:
                     LeapYear.FindLeapYear();
+                    Console.ReadLine();
+                    break;
+                case 3:
+                    PowerOfTwo.TableOfPowerOfTwo();
                     Console.ReadLine();
                     break;
             }
