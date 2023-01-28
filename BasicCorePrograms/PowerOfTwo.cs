@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
@@ -14,8 +10,8 @@ namespace BasicCorePrograms
             int n = Convert.ToInt32(Console.ReadLine());
             for(int i = 0; i <= n; i++)
             {
-                int number = (int)(double)Math.Pow(i, 2);
-                Console.WriteLine("{0}^2={1}",i,number);
+                int number = (int)(double)Math.Pow(2, i);
+                Console.WriteLine("2^{0}={1}",i,number);
             }
         }
     }
