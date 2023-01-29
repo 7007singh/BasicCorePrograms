@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the program number you want to run");
-            Console.WriteLine("1:FlipCoin \n2:LeapYer\n3:PowerOfTwo\n4:HarmonicNo.\n5:FindPrimeFactor\n6.ComputeQuotientRemainder\n7:SwapNumber\n8:CheckEvenOdd");
+            Console.WriteLine("1:FlipCoin \n2:LeapYer\n3:PowerOfTwo\n4:HarmonicNo.\n5:FindPrimeFactor\n6.ComputeQuotientRemainder\n7:SwapNumber\n8:CheckEvenOdd\n9:FindLargestNumber");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -49,6 +49,11 @@ namespace BasicCorePrograms
                 case 8:
                     Console.Clear();
                     EvenOdd.CheckEvenOdd();
+                    Console.ReadLine();
+                    break;
+                case 9:
+                    Console.Clear();
+                    LargestNumber.FindLargestNumber();
                     Console.ReadLine();
                     break;
             }
