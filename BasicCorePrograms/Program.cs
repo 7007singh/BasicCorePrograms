@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the program number you want to run");
-            Console.WriteLine("1:FlipCoin \n2:LeapYer\n3:PowerOfTwo\n4:HarmonicNo.\n5:FindPrimeFactor");
+            Console.WriteLine("1:FlipCoin \n2:LeapYer\n3:PowerOfTwo\n4:HarmonicNo.\n5:FindPrimeFactor\n6.ComputeQuotientRemainder");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,6 +29,10 @@ namespace BasicCorePrograms
                     break;
                 case 5:
                     PrimeFactor.FindPrimeNumber();
+                    Console.ReadLine();
+                    break;
+                case 6: 
+                    QuotientRemainder.ComputeQuotientReminder();
                     Console.ReadLine();
                     break;
             }
